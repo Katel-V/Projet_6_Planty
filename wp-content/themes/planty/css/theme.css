@@ -29,64 +29,17 @@ body {
     color: var(--blanc) !important;
 }
 
-/*menu nav mobile*/ 
 
-
-
-/*section equipe*/
-/*
-#equipe {
-    display: flex;
-    justify-content: center;
-}
-.title_equipe {
-    font-family: 'syne';
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--noir);
-    text-align: center;
-}
-.membre {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    margin-top: 50px;
-    margin-left: 50px;
-    justify-content: center;
-}
-.brancheG {
-    position: relative;
-    top :100px;
-    left: 100px
-}
-.prenom {
-    font-family: 'syne';
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--noir);
-    margin-left: 50px;
-}
-.poste {
-    font-family: 'syne';
-    font-size: 20px;
-    font-weight: regular;
-    color: var(--noir);
-    margin-left: 40px;
-}
-.megane .poste {
-    margin-left: 65px;
-}
-.booke .poste {
-    margin-left: 30px;
-}
-*/
 /*accueil parfum*/
 
 .img_parfum {
     display: flex;
-
 }
 
+.parfum img {
+    width: 192px;
+    height: 128px;
+}
 /*formulaire commande*/
 
 .formulaire_commande {
@@ -106,7 +59,7 @@ body {
 .parfum {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -114,20 +67,20 @@ body {
 .count{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+    margin-left: 70px;
 }
 .count .quantite {
     padding: 0;
-    border-radius: 5px 0 0 5px;
     border: none;
     color: var(--noir);
-    width: 100px;
+    width: 50px;
     height: 56px;
     font-size: 20px;
     padding-left: 20px;
     position: relative;
     
 }
+/*
 .bouton {
     height: 56px; 
     width: 31px;
@@ -173,12 +126,22 @@ body {
     left: 50px;
 }
 .ok:hover {background-color: var(--rouge);}
+*/
 
+.title_formulaire_commande {
+    font-family: 'syne';
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blanc);
+    margin-left: 260px;
+}
 /*separateur*/
 
 .separateur {
     border: 1px solid var(--blanc);
-    margin: 100px;
+    margin: 80px;
+    width: 900px;
+    margin-left: 260px;
 }
 
 /*formulaire info_liv*/
@@ -200,14 +163,15 @@ body {
     margin-left: 10px;
 }
 .colG {
-    width: 50%;
+    width: 33%;
     border-right: 2px solid var(--blanc);
-    padding-right: 38px;
+    /*padding-right: 2px;*/
+    margin-left: 260px;
 }
 
 .colD {
     width: 50%;
-    padding-left: 38px;
+    padding-left: 50px;
 }
 .footer_formulaire {
     display: flex;
@@ -293,22 +257,19 @@ body {
     left: 480px;
 }
 
-
-/*2ème position lien Admin*/
-
-
-
 /*******MEDIA QUERI*******/
 
 @media (max-width: 1024px) {
     .formulaire_commande h1 {font-size: 30px;}
-    .title_formulaire { margin-left: 100px;}
+    .title_formulaire { margin-left: 20px;}
+    .title_formulaire_commande {margin-left: 50px;}
+    .separateur {margin-left: 55px;}
+
     /*formulaire info-liv*/
 
     .colG {
-        border-right: 0;
-        padding-right: 0;
         width: 100%;
+        margin-left: 500px;
     }
     .info_liv {
         display: flex;
@@ -318,9 +279,9 @@ body {
         margin-left: 100px;
     }
     .colD {
-        width: 100%;
-        padding-left: 0;
-        margin-top: 40px;
+        width: 50%;
+        padding-left: 10px;
+        margin-top: 50px;
         border-top: 1px solid var(--blanc);
         padding-top: 20px;
     }
@@ -354,18 +315,38 @@ body {
 
 @media (max-width: 375px) {
     .formulaire_commande h1 {font-size: 25px;}
-    .title_formulaire {font-size: 20px;}
-
+    .title_formulaire {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .title_formulaire_commande {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 60px;
+    }
+    .separateur {
+        margin: 80px;
+        width: 300px;
+        margin-left: 40px;
+    }
     /*formulaire info-liv*/
 
     .info_liv {
-        margin-left: 20px;
+        margin-left: -55px;
     }
-    .colG {width: 100%;}
-    .colD { width: 100%;}
+    .colG {
+        width: 50%;
+        margin-left: -50px;
+        border: none;
+    }
+    .colD { 
+        width: 50%;
+        margin-left: -50px;
+    }
     .info_liv input {
         height: 60px;
-        width: 300px;
+        width: 250px;
     }
     .info_liv label {font-size: 15px;}
     
