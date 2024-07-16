@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
+
+body {
+    font-family: 'Syne';
+    margin: auto !important;
+    max-width: 100%;
+}
+
+:root {
+    --rose : #DC9F96; /* bouton commander */
+    --rouge : #C02E44; /* survol bouton commander menu  et formulaire */
+    --sapin : #3B8E46;
+    --vieux-rose : #E0B9B4; /*couleur bouton quantité commande  et formulaire */
+    --rouge-clair : #D2776A;
+    --noir : #000;
+    --blanc : #fff;
+    --fond: #E3D9D0;
+}
+/* menu nav*/
+
+.et-menu-nav .menu-item-204 a {
+    background-color: var(--rose);
+    color: var(--blanc) !important;
+    padding-left: 61px;
+    padding-right: 61px;
+} 
+.menu-item-204 a:hover {
+    background-color: var(--rouge) !important;
+    color: var(--blanc) !important;
+}
+
+/*menu nav mobile*/ 
+
+
+
+/*section equipe*/
+/*
+#equipe {
+    display: flex;
+    justify-content: center;
+}
+.title_equipe {
+    font-family: 'syne';
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--noir);
+    text-align: center;
+}
+.membre {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    justify-content: center;
+}
+.brancheG {
+    position: relative;
+    top :100px;
+    left: 100px
+}
+.prenom {
+    font-family: 'syne';
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--noir);
+    margin-left: 50px;
+}
+.poste {
+    font-family: 'syne';
+    font-size: 20px;
+    font-weight: regular;
+    color: var(--noir);
+    margin-left: 40px;
+}
+.megane .poste {
+    margin-left: 65px;
+}
+.booke .poste {
+    margin-left: 30px;
+}
+*/
+/*accueil parfum*/
+
+.img_parfum {
+    display: flex;
+
+}
+
+/*formulaire commande*/
+
+.formulaire_commande {
+    background-color: var(--sapin);
+    
+}
+.title_commande {
+    color: var(--blanc);
+    font-family: 'syne';
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+}
+/*formulaire parfum*/ 
+
+.parfum {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.count{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.count .quantite {
+    padding: 0;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    color: var(--noir);
+    width: 100px;
+    height: 56px;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+    
+}
+.bouton {
+    height: 56px; 
+    width: 31px;
+}
+.plus-button {
+    position: relative; 
+    background-color: var(--rose);
+    color: var(--blanc);
+    top:0;
+    left: 0;
+    height: 29px;
+    width: 50px;
+    border-radius: 0 5px 0 0;
+    border-bottom: 1px solid var(--blanc);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    margin: 0;
+}
+.minus-button {
+    position: relative;
+    background-color: var(--rose);
+    color: var(--blanc);
+    top:0;
+    left: 0;
+    height: 29px;
+    width: 50px;
+    border-radius: 0 0 5px 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.plus-button:hover .minus-button:hover {background-color: var(--rouge);}
+.ok {
+    position: relative;
+    width: 130px;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--rose);
+    color: var(--blanc);
+    left: 50px;
+}
+.ok:hover {background-color: var(--rouge);}
+
+/*separateur*/
+
+.separateur {
+    border: 1px solid var(--blanc);
+    margin: 100px;
+}
+
+/*formulaire info_liv*/
+
+.info_liv {display: flex;}
+.title_formulaire {
+    font-family: 'syne';
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blanc);
+    margin-left: 10px;
+}
+.info_liv input {
+    height: 71px;
+    width: 383px;
+    border-radius: 7px !important;
+    border: none !important;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.colG {
+    width: 50%;
+    border-right: 2px solid var(--blanc);
+    padding-right: 38px;
+}
+
+.colD {
+    width: 50%;
+    padding-left: 38px;
+}
+.footer_formulaire {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer_formulaire input {
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--vieux-rose);
+    color: var(--blanc);
+}
+.bouton_commander:hover {background-color: var(--rouge);}
+
+/*label formulaire*/
+
+.info_liv label {
+    color: var(--blanc);
+    font-family: 'syne';
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/*formulaire contact*/
+
+.form_contact { 
+    margin-left: 580px;
+    /*margin: auto;*/
+}
+.title_contact {
+    font-family: 'syne';
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--noir);
+    text-align: center;
+    margin-top: -100px;
+}
+.formulaire_contact input {
+    border-radius: 7px !important;
+    border: none !important;
+    margin-top: 20px;
+    height: 71px;
+    width: 383px;
+}
+.formulaire_contact textarea {
+    border-radius: 7px !important;
+    border: none !important;
+    margin-top: 10px;
+    height: 237px;
+    width: 383px;
+}
+.formulaire_contact label {
+    color: var(--noir);
+    font-family: 'syne';
+    font-size: 20px;
+    font-weight: 400
+}
+.envoyer_formulaire {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.envoyer_formulaire input {
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--vieux-rose);
+    color: var(--blanc);
+}
+.bouton_envoyer:hoover {background-color: var(--rouge);}
+
+/*position de l'image*/
+
+.houx {
+    position: relative;
+    top :550px;
+    left: 480px;
+}
+
+
+/*2ème position lien Admin*/
+
+
+
+/*******MEDIA QUERI*******/
+
+@media (max-width: 1024px) {
+    .formulaire_commande h1 {font-size: 30px;}
+    .title_formulaire { margin-left: 100px;}
+    /*formulaire info-liv*/
+
+    .colG {
+        border-right: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .info_liv {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 38px;
+        margin-left: 100px;
+    }
+    .colD {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+        border-top: 1px solid var(--blanc);
+        padding-top: 20px;
+    }
+
+    /*parfum*/
+
+    .parfum {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    /*formulaire contact*/
+
+    .form_contact {
+        margin: auto;
+    }
+    .formulaire_contact input {
+        height: 65px;
+        width: 100%;
+    }
+    .formulaire_contact textarea {width: 100%;}
+    .houx {
+        left: -65px;
+        top: 480px;
+        height: 134px;
+        width: 147px;
+    }
+}
+
+@media (max-width: 375px) {
+    .formulaire_commande h1 {font-size: 25px;}
+    .title_formulaire {font-size: 20px;}
+
+    /*formulaire info-liv*/
+
+    .info_liv {
+        margin-left: 20px;
+    }
+    .colG {width: 100%;}
+    .colD { width: 100%;}
+    .info_liv input {
+        height: 60px;
+        width: 300px;
+    }
+    .info_liv label {font-size: 15px;}
+    
+
+    /*formulaire contact*/
+    
+    .title_contact {font-size: 15px;}
+    .formulaire_contact label {font-size: 15px;}
+
+    .form_contact {
+        margin: auto;
+    }
+    .formulaire_contact input {
+        height: 60px;
+        width: 100%;
+    }
+    .formulaire_contact textarea {width: 100%;}
+    .houx {
+        left: -65px;
+        top: 480px;
+        height: 134px;
+        width: 147px;
+    }
+
+}
